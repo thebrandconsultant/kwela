@@ -1,19 +1,17 @@
 <html>
 <head>
 	<title>Kwela Consulting</title>
+	<link href="{{site.baseurl}}/css/common.css" rel="stylesheet">
 </head>
 <body>
 
 	<header>
 		<strong>Kwela Consulting Logo</strong>
-	<nav>
-		<ul>
-			<li><a href="{{site.baseurl}}/index.html">Home</a></li>
-			<li><a href="{{site.baseurl}}/blog.html">Blog</a></li>
-
-			</ul>
-	</nav>
+		{% include nav.html %}
 	</header>
 {{content}}
 </body>
+<footer>
+	{% include nav.html %}
+	</footer>
 </html>
